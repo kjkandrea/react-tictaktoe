@@ -53,10 +53,16 @@ class Square extends React.Component {
 * `props`는 *함수 매개변수처럼* 컴포넌트에 전달되는 반면 
 * `state`는 *함수 내에 선언된 변수처럼* 컴포넌트 안에서 관리됩니다.
 
-### state 초기화 
+### Square : state 초기화 
 
 Square 컴포넌트에 생성자(constructor)를 추가하여 state 초기화
 
-### state 렌더링 및 클릭 이벤트 추가
+### Square : state 렌더링 및 setState 클릭 이벤트 추가
 
-setState로 클릭 시 Square를 다시 렌더링하ㅕ value : 'X' 할당
+setState로 클릭 시 Square를 다시 렌더링하여 value : 'X' 할당
+
+### Board와 Square의 관계 역전 시키기
+
+승자를 확인하기 위하여 각 Square가 아닌 부모 Board 컴포넌트에 게임의 상태를 state로 저장하는 것이 가장 좋은 방법입니다.
+
+> 여러개의 자식으로부터 데이터를 모으거나 두 개의 자식 컴포넌트들이 서로 통신하게 하려면 부모 컴포넌트에 공유 state를 정의해야 합니다. 부모 컴포넌트는 props를 사용하여 자식 컴포넌트에 state를 다시 전달할 수 있습니다. 이것은 자식 컴포넌트들이 서로 또는 부모 컴포넌트와 동기화 하도록 만듭니다.
