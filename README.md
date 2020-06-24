@@ -12,3 +12,7 @@ npx create-react-app react-tictaktoe
 npm start
 ```
 
+## 스카폴딩
+
+src내에 기존 소스파일 삭제
+
