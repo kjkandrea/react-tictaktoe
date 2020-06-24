@@ -74,3 +74,7 @@ setState로 클릭 시 Square를 다시 렌더링하여 value : 'X' 할당
 ## X, O, X, O.. 순서 만들기
 
 `xIsNext` state를 생성하여 X부터 순서를 시작하고 번갈아가며 진행되도록 구현
+
+## 승자 결정하기
+
+`calculateWinner` 도우미 함수를 사용하여 승자가 발생했을 때 승자 표시
