@@ -21,4 +21,4 @@ npm start
 
 부모 Board 컴포넌트에서 자식 Square 컴포넌트로 “prop을 전달”
 
-Board : renderSquare 에서 숫자를 i라는 인자로 받아 **부모에서 자식으로 데이터를 넘겨줌**
+Board : renderSquare 에서 숫자를 i라는 인자로 받아 **부모(Board)에서 자식(Square)으로 데이터를 넘겨줌**
