@@ -70,3 +70,7 @@ setState로 클릭 시 Square를 다시 렌더링하여 value : 'X' 할당
 ### Square를 함수 컴포넌트로 변경
 
 `onClick={() => this.props.onClick()}`을 `onClick={props.onClick}`로 간결하게 작성한것을 볼 수 있다. 
+
+## X, O, X, O.. 순서 만들기
+
+`xIsNext` state를 생성하여 X부터 순서를 시작하고 번갈아가며 진행되도록 구현
