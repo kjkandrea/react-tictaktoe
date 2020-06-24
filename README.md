@@ -22,3 +22,26 @@ npm start
 부모 Board 컴포넌트에서 자식 Square 컴포넌트로 “prop을 전달”
 
 Board : renderSquare 에서 숫자를 i라는 인자로 받아 **부모(Board)에서 자식(Square)으로 데이터를 넘겨줌**
+
+## 선행 연습 : 클릭 이벤트 심기
+
+onClick 이벤트를 Square 컴포넌트에 심기
+
+```
+class Square extends React.Component {
+  render() {
+    return (
+      <button
+        className="square"
+        onClick={() => alert('click')}
+      >
+        {this.props.value}
+      </button>
+    );
+  }
+}
+```
+
+코드 작성 후 Square를 클릭하면 얼럿이 출력됨.
+
+`onClick={() => alert('click')}`이 어떻게 동작하는지 살펴보면 `onClick` prop으로 함수를 전달하고 있습니다. React는 클릭했을 때에만 이 함수를 호출할 것입니다. `() =>`을 잊어버리고 `onClick={alert('click')}`이라고 작성하는 것은 자주 발생하는 실수이며 컴포넌트가 다시 렌더링할 때마다 경고 창을 띄울 것입니다
