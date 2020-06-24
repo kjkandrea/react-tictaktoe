@@ -78,3 +78,12 @@ setState로 클릭 시 Square를 다시 렌더링하여 value : 'X' 할당
 ## 승자 결정하기
 
 `calculateWinner` 도우미 함수를 사용하여 승자가 발생했을 때 승자 표시
+
+## 시간 여행 추가하기
+
+### 동작에 대한 기록 저장하기
+
+과거의 `squares` 배열들을 `history`라는 다른 배열에 저장할 것입니다.
+
+* Game와 Board의 관계 역전
+* 모든 게임 진행과정을 history state에 로깅
