@@ -87,3 +87,7 @@ setState로 클릭 시 Square를 다시 렌더링하여 value : 'X' 할당
 
 * Game와 Board의 관계 역전
 * 모든 게임 진행과정을 history state에 로깅
+
+### 과거의 이동 표시하기
+
+### jumpTo 동작 구현하기
